@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/jpg" href="./favicon/pass1.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/images/passwor3.png" alt="Password image">
+                    <div class="card-body">
+                        <h5 class="card-title">Password Generator</h5>
+                        <p class="card-text">Please choose passwor requiremnet</p>
+
+                        <form id="frmPass">
+                            <!-- <select class="chartype" id="select" name="chartype">  -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character" value="lowercase"
+                                    id="chkLower">
+                                <label class="form-check-label" for="chkLower">
+                                    Lowercase
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character" value="uppercase"
+                                    id="chkUpper">
+                                <label class="form-check-label" for="chkUpper">
+                                    Uppercase
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character" value="number"
+                                    id="chkNumber">
+                                <label class="form-check-label" for="chkNumber">
+                                    Number
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="character" value="symbole"
+                                    id="chkSymbole">
+                                <label class="form-check-label" for="chkSymbole">
+                                    Symbole
+                                </label>
+                            </div>
+                            <!-- </select> -->
+                            <div class="form-group">
+                                <label for="formControlRange">Password Range</label>
+
+                                <input type="range" class="form-control-range" id="formControlRange" min='8' max='64'
+                                    name="slider">
+                                <p>Value: <span id="pRange"></span></p>
+                            </div>
+                            <input type="text" name="yourPass" class="form-control" id="txtPassword"
+                                placeholder="Your Password will show up here!" aria-label="Generated password">
+                            <button id="btnPass">Generate</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <h2>Password History</h2>
+                <ul id="passLog">
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
