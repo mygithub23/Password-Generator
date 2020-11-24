@@ -63,7 +63,7 @@
     text-align: left; 
   }
   
-  
+ 
   .text-secondary {
     color:#DDFFE7
   }
@@ -82,7 +82,9 @@
   
   .slidecontainer {
     width: 100%;
+
 }
+
 
 .slider {
     -webkit-appearance: none;
@@ -124,4 +126,7 @@
 
 #frPass {
     margin: 5%;
+}
+.row {
+  margin-top: 20%;
 }
